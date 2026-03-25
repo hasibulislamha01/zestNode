@@ -32,11 +32,11 @@ const Trending = ({ loader }) => {
                                         className='object-cover rounded-lg my-5'
                                     />
                                 </figure>
-                                <div className="card-body">
+                                <div className="card-body h-32 flex flex-col justify-evenly">
                                     <h2 className="card-title">
                                         {app.title}
                                     </h2>
-                                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                                    
                                     <div className="card-actions justify-between">
                                         <div className="">{app.ratingAvg}</div>
                                         <div className="">{app.downloads}</div>

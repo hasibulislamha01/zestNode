@@ -7,12 +7,14 @@
 .main {
     max-width: 95%;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 @media (min-width: 1280px) {
     .main {
         max-width: 90%;
         margin: 0 auto;
+        min-height: 100vh;
     }
 }
 
