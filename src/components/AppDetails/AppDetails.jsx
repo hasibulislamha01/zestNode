@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData, useParams } from 'react-router';
 
 const download = "/assets/icon-downloads.png"
@@ -9,43 +10,56 @@ const AppDetails = () => {
     const params = useParams()
     const appId = Number(params.id)
     const apps = useLoaderData()
-    const app = apps?.find(app => app.id === appId)
+    const app = apps?.find(app => app?.id === appId)
+    const [isInstalled, setIsInstalled] = useState(false)
     // console.log(app, apps, typeof appId);
+    const handleInstall = () => {
+        setIsInstalled(true)
+        toast.success("App Installed Successfully")
+    }
     return (
-        <section>
 
+        <section className='container mx-auto'>
             {/* summary box */}
             <div className='flex items-center gap-10'>
                 {/* image container */}
                 <div className='h-80 w-80 rounded-lg border-2 border-dashed border-gray-300 p-5 bg-gray-50 flex items-center justify-center'>
-                    <img src={app.image} alt={app.title} className='w-full h-full object-cover rounded-md' />
+                    <img src={app?.image} alt={app?.title} className='w-full h-full object-cover rounded-md' />
                 </div>
                 {/*  */}
                 <div className='flex-1 h-80 pl-8 py-5 flex flex-col justify-evenly rounded-lg border-2 border-dashed border-gray-300 bg-gray-50'>
 
                     <div className='pb-3 space-y-1 border-b border-gray-300'>
-                        <h1 className='text-3xl font-bold'>{app.title}</h1>
-                        <p className='font-semibold text-gray-600'>Developed by: <span className='text-purple-700 '>{app.companyName}</span></p>
+                        <h1 className='text-3xl font-bold'>{app?.title}</h1>
+                        <p className='font-semibold text-gray-600'>Developed by: <span className='text-purple-700 '>{app?.companyName}</span></p>
                     </div>
 
                     <div className='flex items-center gap-10 lg:gap-20 mb-2'>
                         <KpiStat
                             imageUrl={download}
                             subTitle={"Downloads"}
-                            stat={`${app.downloads / 1000000}M`}
+                            stat={`${app?.downloads / 1000000}M`}
                         />
                         <KpiStat
                             imageUrl={star}
                             subTitle={"Average Rating"}
-                            stat={app.ratingAvg}
+                            stat={app?.ratingAvg}
                         />
                         <KpiStat
                             imageUrl={like}
                             subTitle={"Total Reviews"}
-                            stat={`${parseInt(app.reviews / 1000)}K`}
+                            stat={`${parseInt(app?.reviews / 1000)}K`}
                         />
                     </div>
-                    <button className='btn btn-primary w-60'>Install Now ({app.size}MB)</button>
+                    <button
+                        onClick={() => handleInstall()}
+                        disabled={isInstalled}
+                        className='btn btn-primary w-60'>
+                        {!isInstalled ?
+                            `Install Now (${app?.size}MB)`
+                            : "Installed"
+                        }
+                    </button>
                 </div>
             </div>
 
@@ -53,10 +67,10 @@ const AppDetails = () => {
             <div className='space-y-3 mt-20'>
                 <h4 className='font-bold text-lg'>Description</h4>
                 <p>
-                    {app.description}
+                    {app?.description}
                 </p>
             </div>
-
+            <Toaster />
         </section>
     );
 };

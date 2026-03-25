@@ -7,6 +7,7 @@ import Home from './components/Home/Home.jsx'
 import Installation from './components/Installation/Installation.jsx'
 import App from './components/App/App.jsx'
 import AppDetails from './components/AppDetails/AppDetails.jsx'
+import NotFound from './components/NotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "installation",
         Component: Installation,
+      },
+      {
+        path: "*",
+        Component: NotFound,
       },
 
     ],

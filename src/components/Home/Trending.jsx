@@ -30,7 +30,7 @@ const Trending = ({ loader }) => {
                     )
                 }
             </div>
-            <button className='btn' onClick={() => navigate("/apps")}>Show All</button>
+            <button className='btn  bg-linear-65 from-purple-800 to-purple-500 text-purple-100' onClick={() => navigate("/apps")}>Show All</button>
         </section>
     );
 };
