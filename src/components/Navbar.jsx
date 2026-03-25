@@ -7,7 +7,7 @@ const navLinks = [
     { title: "Installation", link: "/installation" },
 ]
 
-const logo = "/public/assets/logo.png"
+const logo = "/assets/logo.png"
 
 const Navbar = () => {
     return (
