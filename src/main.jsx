@@ -6,6 +6,7 @@ import Root from './components/Layout/Root.jsx'
 import Home from './components/Home/Home.jsx'
 import Installation from './components/Installation/Installation.jsx'
 import App from './components/App/App.jsx'
+import AppDetails from './components/AppDetails/AppDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,12 @@ const router = createBrowserRouter([
     Component: Root,
     children: [
       { index: true, Component: Home },
-      { path: "app", Component: App },
+      { path: "apps", Component: App },
+      { 
+        path: "apps/:id", 
+        loader: async ()=> await fetch("/data.json"),
+        Component: AppDetails 
+      },
       {
         path: "installation",
         Component: Installation,     

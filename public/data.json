@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/Ta8Ta_Scuj8YKPPpyI_6s2hzbCo8QVjC1b8B4ElMmtBwcDbyQRvPNMRepTDgplXLbJM=w240-h480-rw",
+    "title": "ChatFlow - Messaging & Calls",
+    "companyName": "TechNova Ltd.",
+    "id": 1,
+    "description": "Fast and secure messaging with voice and video calls, group chats, and media sharing.",
+    "size": 52,
+    "reviews": 184532,
+    "ratingAvg": 4.4,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 9230 },
+      { "name": "2 star", "count": 11000 },
+      { "name": "3 star", "count": 23000 },
+      { "name": "4 star", "count": 58000 },
+      { "name": "5 star", "count": 83202 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/XbyPYUvaiayhseYJkxprcSRwnRCm3wtlEQq9SW7eQ-aCaYCbqi3NSweLJgzK_i1u2EY=w240-h480-rw",
+    "title": "FitTrack - Fitness & Workout",
+    "companyName": "Healthify Inc.",
+    "id": 2,
+    "description": "Track workouts, steps, calories burned, and stay fit with personalized plans.",
+    "size": 68,
+    "reviews": 98321,
+    "ratingAvg": 4.3,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 5200 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 32000 },
+      { "name": "5 star", "count": 39121 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/Hg-F1BZQ15QdPT_Nrr5HWoQs_h6uzQQ9EkNfrAHT12iRoE5NGWOHB2Oz8tWAFzxHVqsT=w240-h480-rw",
+    "title": "TaskMaster - To Do List",
+    "companyName": "Productive Labs",
+    "id": 3,
+    "description": "Organize daily tasks, set reminders, and boost productivity.",
+    "size": 34,
+    "reviews": 254120,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 144120 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/Rilq4obCk7XIl2Pjb8XT-Ydh_aI3hBNeFwro9fFXrIAuC-zPxCZ4feE4rx5fZ3jHNLw=w240-h480-rw",
+    "title": "SnapSeed - Photo Editor",
+    "companyName": "PixSoft Studio",
+    "id": 4,
+    "description": "Edit photos with AI filters, remove backgrounds, and enhance images instantly.",
+    "size": 89,
+    "reviews": 312450,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 18000 },
+      { "name": "3 star", "count": 45000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 137450 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/HHW8VHvKlaGUxylMxcTwUpesxw53PrDcXGlth9ZbTX5v4gnBcqq63JIO47hqwRM7jBYxRUQcYMQqpaqV5SasXI8=w240-h480-rw",
+    "title": "EduLearn - Online Courses",
+    "companyName": "BrightMind Tech",
+    "id": 5,
+    "description": "Learn programming, business, and more with expert-led video courses.",
+    "size": 74,
+    "reviews": 167210,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 28000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 61210 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/GjQ8KvMikEHOBUnETxsRBMO8E7t5XDDZT-gMpb1pkECWEY_HdWv9rPRBjgWra1VKN0c=w240-h480-rw",
+    "title": "MusicWave - Music & Podcasts",
+    "companyName": "SoundLab Inc.",
+    "id": 6,
+    "description": "Stream millions of songs and podcasts with offline support.",
+    "size": 62,
+    "reviews": 845120,
+    "ratingAvg": 4.2,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 295120 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/S-uKFKA_z8CAE066aYFtgovhyDFTknOPzH8dcUHfUtCl8yYmizSewRf-nGWX-BIGqJkn=s256-rw",
+    "title": "TravelGo - Book Flights & Hotels",
+    "companyName": "WanderTech",
+    "id": 7,
+    "description": "Find cheap flights, hotels, and travel deals worldwide.",
+    "size": 95,
+    "reviews": 129540,
+    "ratingAvg": 4.3,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 22000 },
+      { "name": "4 star", "count": 45000 },
+      { "name": "5 star", "count": 46540 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/SNT0rEvrMhbEfI7EfWorSrZo_YuznICGwihb5mHgdbCyW0showZNKDgzPG5cRNaw3K_K=w240-h480-rw",
+    "title": "FinancePro - Expense Tracker",
+    "companyName": "MoneyWise Apps",
+    "id": 8,
+    "description": "Track income, expenses, and manage your personal finances easily.",
+    "size": 41,
+    "reviews": 75420,
+    "ratingAvg": 4.1,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 24420 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/gamezone.png",
+    "title": "GameZone - Casual Games Hub",
+    "companyName": "FunPlay Studios",
+    "id": 9,
+    "description": "Play hundreds of fun and addictive mini-games in one place.",
+    "size": 128,
+    "reviews": 1254320,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 524320 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/weathernow.png",
+    "title": "WeatherNow - Live Forecast",
+    "companyName": "SkyTech Solutions",
+    "id": 10,
+    "description": "Accurate weather forecasts with live updates and radar.",
+    "size": 28,
+    "reviews": 54310,
+    "ratingAvg": 4.0,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 11000 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 16310 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/notekeeper.png",
+    "title": "NoteKeeper - Notes & Lists",
+    "companyName": "MemoSoft",
+    "id": 11,
+    "description": "Simple and powerful note-taking app with cloud sync.",
+    "size": 22,
+    "reviews": 112340,
+    "ratingAvg": 4.4,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 7000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 42000 },
+      { "name": "5 star", "count": 40340 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/shopeasy.png",
+    "title": "ShopEasy - Online Shopping",
+    "companyName": "RetailHub Ltd.",
+    "id": 12,
+    "description": "Shop millions of products with fast delivery and secure payments.",
+    "size": 102,
+    "reviews": 945210,
+    "ratingAvg": 4.3,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 180000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 305210 }
+    ]
+  }
+]
