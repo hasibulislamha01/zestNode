@@ -7,7 +7,7 @@ const Root = () => {
         <section>
             <Navbar />
 
-            <div className='container mx-auto mt-10'>
+            <div className='mt-10'>
                 <Outlet />
             </div>
 

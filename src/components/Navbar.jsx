@@ -7,6 +7,8 @@ const navLinks = [
     { title: "Installation", link: "/installation" },
 ]
 
+const logo = "/public/assets/logo.png"
+
 const Navbar = () => {
     return (
         <nav className="navbar bg-base-100 shadow-sm">
@@ -25,7 +27,13 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <NavLink to={"/"} className="btn btn-ghost text-xl cursor-pointer">
+                    <img
+                        src={logo}
+                        alt='logo'
+                        className='w-10 h-10 object-cover'
+                    />
+                </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -34,14 +42,14 @@ const Navbar = () => {
                             <NavLink
                                 key={navLink.link}
                                 to={navLink.link}
-                                className={`${({isActive})=> isActive ? "text-blue-500 border-b border-blue-500": ""} font-semibold mr-5`}
+                                className={`${({ isActive }) => isActive ? "text-blue-500 border-b border-blue-500" : ""} font-semibold mr-5`}
                             >{navLink.title}</NavLink>
                         )
                     }
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Contribute</a>
+                <NavLink to="https://github.com/hasibulislamha01" target='_blank' className="btn">Contribute</NavLink>
             </div>
         </nav>
     );

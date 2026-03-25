@@ -13,8 +13,8 @@ const Trending = ({ loader }) => {
     // console.log("trenidng", trendingApps);
 
     return (
-        <section>
-            <div className='max-w-md mx-auto text-center space-y-2'>
+        <section className='container mx-auto mt-20'>
+            <div className='max-w-md mx-auto text-center space-y-2 mb-8'>
                 <h1 className='text-3xl font-bold'>Trending Apps</h1>
                 <p>
                     Explore all trending apps on the market developed by us.
