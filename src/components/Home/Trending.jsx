@@ -1,5 +1,6 @@
 import React, { use } from 'react';
 import { Link, useNavigate } from 'react-router';
+import AppCard from '../AppCard';
 
 
 const Trending = ({ loader }) => {
@@ -24,30 +25,12 @@ const Trending = ({ loader }) => {
                 {
                     trendingApps?.map(app =>
                         <Link to={`/apps/${app?.id}`} key={app.id}>
-                            <div  className="card bg-base-100 shadow-sm">
-                                <figure className='bg-gray-100 h-72'>
-                                    <img
-                                        src={app.image}
-                                        alt={`${app.title} name`}
-                                        className='object-cover rounded-lg my-5'
-                                    />
-                                </figure>
-                                <div className="card-body h-32 flex flex-col justify-evenly">
-                                    <h2 className="card-title">
-                                        {app.title}
-                                    </h2>
-                                    
-                                    <div className="card-actions justify-between">
-                                        <div className="">{app.ratingAvg}</div>
-                                        <div className="">{app.downloads}</div>
-                                    </div>
-                                </div>
-                            </div>
+                            <AppCard app={app} />
                         </Link>
                     )
                 }
             </div>
-            <button onClick={() => navigate("/apps")}>Show All</button>
+            <button className='btn' onClick={() => navigate("/apps")}>Show All</button>
         </section>
     );
 };
