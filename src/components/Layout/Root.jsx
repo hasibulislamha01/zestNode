@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, useNavigation } from 'react-router';
 import Navbar from '../Navbar';
 import GlobalSpinner from '../GlobalSpinner';
+import Footer from '../Footer';
 
 const Root = () => {
     const navigation = useNavigation()
@@ -10,12 +11,12 @@ const Root = () => {
         <section>
             <Navbar />
 
-            <div className='mt-10'>
+            <div className='mt-10 mb-20'>
                 {isNavigating ? <GlobalSpinner /> : <Outlet />}
                 
             </div>
 
-            footer
+            <Footer/>
         </section>
     );
 };

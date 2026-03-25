@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData, useParams } from 'react-router';
+import { Bar, BarChart, XAxis, YAxis } from 'recharts';
+// import { BarChart, Bar } from 'recharts';
+// import { RechartsDevtools } from '@recharts/devtools';
 
 const download = "/assets/icon-downloads.png"
 const star = "/assets/icon-ratings.png"
@@ -62,7 +65,7 @@ const AppDetails = () => {
                     </button>
                 </div>
             </div>
-
+            <ShowBarChart data={app.ratings} />
             {/* description */}
             <div className='space-y-3 mt-20'>
                 <h4 className='font-bold text-lg'>Description</h4>
@@ -84,5 +87,20 @@ const KpiStat = ({ imageUrl, subTitle, stat }) => {
             <p className='text-gray-700 font-medium'>{subTitle}</p>
             <h2 className='text-2xl font-bold'>{stat}</h2>
         </div>
+    )
+}
+
+const ShowBarChart = ({ data }) => {
+    return (
+        <BarChart
+            style={{ width: '100%', maxWidth: '700px', maxHeight: '1900px', aspectRatio: 1.618 }}
+            responsive
+            data={data}
+        >
+            <XAxis type='number' />
+            <YAxis dataKey="name" type='catagory'/>
+            <Bar dataKey="count" fill="#8884d8" />
+            {/* <RechartsDevtools /> */}
+        </BarChart>
     )
 }
