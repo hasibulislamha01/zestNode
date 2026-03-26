@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData, useParams } from 'react-router';
-import { Bar, BarChart, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 // import { BarChart, Bar } from 'recharts';
 // import { RechartsDevtools } from '@recharts/devtools';
 
@@ -109,15 +109,17 @@ const KpiStat = ({ imageUrl, subTitle, stat }) => {
 
 const ShowBarChart = ({ data }) => {
     return (
-        <BarChart
-            style={{ width: '100%', maxWidth: '700px', maxHeight: '1900px', aspectRatio: 1.618 }}
-            responsive
-            data={data}
-        >
-            <XAxis type='number' />
-            <YAxis dataKey="name" type='catagory' />
-            <Bar dataKey="count" fill="#8884d8" />
-            {/* <RechartsDevtools /> */}
-        </BarChart>
+        <div className='w-[95%] md:w-[85%] lg:w-245 mx-auto border border-red-500'>
+            <BarChart
+                style={{ width: '100%', aspectRatio: 1.618 }}
+                responsive
+                data={data}
+                layout='vertical'
+            >
+                <Bar dataKey="count" fill="#8884d8" />
+                <Tooltip />
+                {/* <RechartsDevtools /> */}
+            </BarChart>
+        </div>
     )
 }
