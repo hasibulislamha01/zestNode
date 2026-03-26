@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData, useParams } from 'react-router';
-import { Bar, BarChart, CartesianGrid, Label, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-// import { BarChart, Bar } from 'recharts';
-// import { RechartsDevtools } from '@recharts/devtools';
+import { RatingChart } from '../Chart';
 
 const download = "/assets/icon-downloads.png"
 const star = "/assets/icon-ratings.png"
@@ -82,7 +80,9 @@ const AppDetails = () => {
                     </button>
                 </div>
             </div>
-            <ShowBarChart data={app.ratings} />
+            <div className='my-20'>
+                <RatingChart ratingData={app?.ratings} />
+            </div>
             {/* description */}
             <div className='space-y-3 mt-20'>
                 <h4 className='font-bold text-lg'>Description</h4>
@@ -103,27 +103,6 @@ const KpiStat = ({ imageUrl, subTitle, stat }) => {
             <img src={imageUrl} alt='downloaded' />
             <p className='text-gray-700 font-medium'>{subTitle}</p>
             <h2 className='text-2xl font-bold'>{stat}</h2>
-        </div>
-    )
-}
-
-const ShowBarChart = ({ data }) => {
-    console.log(data);
-    return (
-        <div className='w-[95%] md:w-[85%] lg:w-245 mx-auto border border-red-500'>
-            <BarChart
-                style={{ width: '100%', maxHeight: "500px" }}
-                responsive
-                data={data}
-                // layout='vertical'
-            >
-                <XAxis/>
-                <YAxis/>
-                <Label/>
-                <Tooltip />
-                <Bar dataKey="count" fill="#8884d8" />
-                {/* <RechartsDevtools /> */}
-            </BarChart>
         </div>
     )
 }

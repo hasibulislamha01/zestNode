@@ -1,6 +1,9 @@
 import React from 'react';
 
-const AppCard = ({app}) => {
+const star = "/assets/icon-ratings.png"
+const download = "/assets/icon-downloads.png"
+
+const AppCard = ({ app }) => {
     return (
         <div className="card bg-base-100 shadow-sm">
             <figure className='bg-gray-100 h-72'>
@@ -16,8 +19,14 @@ const AppCard = ({app}) => {
                 </h2>
 
                 <div className="card-actions justify-between">
-                    <div className="">{app?.ratingAvg}</div>
-                    <div className="">{app?.downloads}</div>
+                    <div className="flex items-center gap-2">
+                        <img src={star} alt="" className='w-4 h-4' />
+                        {app?.ratingAvg}
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <img src={download} alt="" className='w-4 h-4' />
+                        {app?.downloads / 1000000} M
+                    </div>
                 </div>
             </div>
         </div>
