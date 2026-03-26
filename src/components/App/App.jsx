@@ -19,7 +19,7 @@ const App = () => {
         setLoading(false)
     }
     return (
-        <section className='container mx-auto'>
+        <section className='container mx-auto px-2'>
             <div className='max-w-lg mx-auto text-center space-y-3 mb-10'>
                 <h1 className='text-3xl font-bold capitalize'> Our all Apps</h1>
                 <p className='text-gray-600'>

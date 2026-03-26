@@ -41,7 +41,7 @@ const AppDetails = () => {
     return (
         <section className='container mx-auto'>
             {/* summary box */}
-            <div className='flex items-center gap-10'>
+            <div className='flex flex-col md:flex-row items-center gap-10'>
                 {/* image container */}
                 <div className='h-80 w-80 rounded-lg border-2 border-dashed border-gray-300 p-5 bg-gray-50 flex items-center justify-center'>
                     <img src={app?.image} alt={app?.title} className='w-full h-full object-cover rounded-md' />
@@ -54,7 +54,7 @@ const AppDetails = () => {
                         <p className='font-semibold text-gray-600'>Developed by: <span className='text-purple-700 '>{app?.companyName}</span></p>
                     </div>
 
-                    <div className='flex items-center gap-10 lg:gap-20 mb-2'>
+                    <div className='flex flex-wrap items-center gap-10 lg:gap-20 mb-2'>
                         <KpiStat
                             imageUrl={download}
                             subTitle={"Downloads"}
