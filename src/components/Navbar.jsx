@@ -50,8 +50,8 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
-            <div className="navbar-end hidden md:block">
-                <NavLink to="https://github.com/hasibulislamha01" target='_blank' className="btn bg-linear-65 from-purple-800 to-purple-500 text-purple-100">
+            <div className="navbar-end ">
+                <NavLink to="https://github.com/hasibulislamha01" target='_blank' className="hidden md:flex btn bg-linear-65 from-purple-800 to-purple-500 text-purple-100">
                     <FaGithub />
                     <h4>Contribute</h4>
                 </NavLink>
