@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { SiSpeedypage } from 'react-icons/si';
 import { NavLink } from 'react-router';
 
 const navLinks = [
@@ -7,7 +9,6 @@ const navLinks = [
     { title: "Installation", link: "/installation" },
 ]
 
-const logo = "/assets/logo.png"
 
 const Navbar = () => {
     return (
@@ -27,12 +28,9 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <NavLink to={"/"} className="btn btn-ghost text-xl cursor-pointer">
-                    <img
-                        src={logo}
-                        alt='logo'
-                        className='w-10 h-10 object-cover'
-                    />
+                <NavLink to={"/"} className="btn btn-ghost text-xl cursor-pointer gap-3">
+                    <SiSpeedypage fill='oklch(43.8% 0.218 303.724)' size={30} />
+                    <h3 className='text-lg font-bold uppercase text-purple-700'>Velocity</h3>
                 </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -45,7 +43,7 @@ const Navbar = () => {
                                 className={`font-semibold mr-5`}
                             >
                                 {({ isActive }) => (
-                                    <span className={isActive ? "text-blue-500 border-b border-blue-500" : ""}>{navLink.title}</span>
+                                    <span className={isActive ? "text-purple-700 border-b border-purple-500" : ""}>{navLink.title}</span>
                                 )}
                             </NavLink>
                         )
@@ -53,7 +51,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <NavLink to="https://github.com/hasibulislamha01" target='_blank' className="btn">Contribute</NavLink>
+                <NavLink to="https://github.com/hasibulislamha01" target='_blank' className="btn bg-linear-65 from-purple-800 to-purple-500 text-purple-100">
+                    <FaGithub />
+                    <h4>Contribute</h4>
+                </NavLink>
             </div>
         </nav>
     );
