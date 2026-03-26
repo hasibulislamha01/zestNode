@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData, useParams } from 'react-router';
 import { Bar, BarChart, XAxis, YAxis } from 'recharts';
@@ -16,12 +16,29 @@ const AppDetails = () => {
     const app = apps?.find(app => app?.id === appId)
     const [isInstalled, setIsInstalled] = useState(false)
     // console.log(app, apps, typeof appId);
+
+    useEffect(() => {
+        const saved = JSON.parse(localStorage.getItem("installed")) || []
+        const alreadyInstalled = saved?.find(item => item.id === app.id)
+        if (alreadyInstalled) { setIsInstalled(true) }
+    }, [app.id])
+
+
+    const saveToLocalStorage = (item) => {
+        const saved = JSON.parse(localStorage.getItem("installed")) || []
+        const newData = [item, ...saved]
+        localStorage.setItem("installed", JSON.stringify(newData))
+    }
+
     const handleInstall = () => {
+        if (isInstalled) return
+
+        saveToLocalStorage(app)
         setIsInstalled(true)
         toast.success("App Installed Successfully")
     }
-    return (
 
+    return (
         <section className='container mx-auto'>
             {/* summary box */}
             <div className='flex items-center gap-10'>
@@ -98,7 +115,7 @@ const ShowBarChart = ({ data }) => {
             data={data}
         >
             <XAxis type='number' />
-            <YAxis dataKey="name" type='catagory'/>
+            <YAxis dataKey="name" type='catagory' />
             <Bar dataKey="count" fill="#8884d8" />
             {/* <RechartsDevtools /> */}
         </BarChart>
