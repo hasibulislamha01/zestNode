@@ -29,7 +29,7 @@ const Footer = () => {
                 <form>
                     <h6 className='text-end w-full mb-3 text-gray-600 font-medium pr-3'>Subscribe to our newsletter</h6>
                     <fieldset className="w-80">
-                        <div className='flex gap-5'>
+                        <div className='flex flex-col md:flex-row gap-5'>
                             <input
                                 type="text"
                                 placeholder="username@site.com"
@@ -37,7 +37,7 @@ const Footer = () => {
                             <button className="btn btn-primary join-item rounded-full">Subscribe</button>
                         </div>
                     </fieldset>
-                    <div className='flex items-center justify-end gap-5 mt-2 mr-2 ml-auto'>
+                    <div className='flex items-center justify-center md:justify-end gap-5 mt-2 mr-2 md:ml-auto'>
                         <BsInstagram size={20} />
                         <FaFacebook size={20} />
                         <BsTwitterX size={20} />

@@ -59,8 +59,8 @@ const Home = () => {
             <div className='space-y-10 py-14 text-purple-100 bg-radial-[at_50%_75%] from-purple-600 via-purple-700 to-purple-900 to-90%'>
                 <h1 className='capitalize text-center text-3xl font-bold'>Trusted by millions, Built for you</h1>
 
-                <div className='lg:max-w-[75%] mx-auto grid grid-cols-3 place-items-center'>
-                    <div className='text-center space-y-1'>
+                <div className='lg:max-w-[75%] mx-auto grid grid-cols-4 md:grid-cols-3 place-items-center gap-5'>
+                    <div className='col-span-2  md:col-span-1 text-center space-y-1'>
                         <h6 className='text-sm'>Total Downloads</h6>
                         <h2 className='text-3xl font-bold'>
                             21.9M
@@ -68,14 +68,14 @@ const Home = () => {
                         <p className='text-sm'>21% more that last month</p>
                     </div>
 
-                    <div className='text-center space-y-1'>
+                    <div className='col-span-2  md:col-span-1 text-center space-y-1'>
                         <h6 className='text-sm'>Total Reviews</h6>
                         <h2 className='text-3xl font-bold'>
                             906K
                         </h2>
                         <p className='text-sm'>46% more that last month</p>
                     </div>
-                    <div className='text-center space-y-1'>
+                    <div className='col-span-4 md:col-span-1 text-center space-y-1'>
                         <h6 className='text-sm'>Active Apps</h6>
                         <h2 className='text-3xl font-bold'>
                             132+

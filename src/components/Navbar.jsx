@@ -28,7 +28,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <NavLink to={"/"} className="btn btn-ghost text-xl cursor-pointer gap-3">
+                <NavLink to={"/"} className="ml-auto md:ml-0 btn btn-ghost text-xl cursor-pointer gap-3">
                     <SiSpeedypage fill='oklch(43.8% 0.218 303.724)' size={30} />
                     <h3 className='text-lg font-bold uppercase text-purple-700'>Velocity</h3>
                 </NavLink>
@@ -50,7 +50,7 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end hidden md:block">
                 <NavLink to="https://github.com/hasibulislamha01" target='_blank' className="btn bg-linear-65 from-purple-800 to-purple-500 text-purple-100">
                     <FaGithub />
                     <h4>Contribute</h4>
