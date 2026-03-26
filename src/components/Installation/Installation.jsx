@@ -27,7 +27,7 @@ const Installation = () => {
 
             <div className='max-w-245 mx-auto space-y-10'>
                 <div className='flex justify-between'>
-                    <h4 className='text-lg font-semibold text-gray-600'>Found {installedApps?.length} Apps</h4>
+                    <h4 className='text-lg font-semibold text-gray-600'>Found {installedApps?.length || 0} Apps</h4>
                     <p>Sort</p>
                 </div>
 

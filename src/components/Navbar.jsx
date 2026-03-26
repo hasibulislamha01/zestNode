@@ -42,8 +42,12 @@ const Navbar = () => {
                             <NavLink
                                 key={navLink.link}
                                 to={navLink.link}
-                                className={`${({ isActive }) => isActive ? "text-blue-500 border-b border-blue-500" : ""} font-semibold mr-5`}
-                            >{navLink.title}</NavLink>
+                                className={`font-semibold mr-5`}
+                            >
+                                {({ isActive }) => (
+                                    <span className={isActive ? "text-blue-500 border-b border-blue-500" : ""}>{navLink.title}</span>
+                                )}
+                            </NavLink>
                         )
                     }
                 </ul>
